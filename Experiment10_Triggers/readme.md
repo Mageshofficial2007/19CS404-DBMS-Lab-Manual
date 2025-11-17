@@ -71,7 +71,8 @@ SELECT * FROM employee_log;
 **Expected Output:**
 - A new entry is added to the `employee_log` table each time a new record is inserted into the `employees` table.
 # output:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ba4dccc0-9286-4c73-b9b5-369636ef2f10" />
+<img width="1906" height="1083" alt="Screenshot 2025-11-17 183501" src="https://github.com/user-attachments/assets/adf84205-b7e0-4d61-8247-6c2628f1c552" />
+
 
 ---
 
@@ -107,7 +108,8 @@ DELETE FROM sensitive_data WHERE id = 1;
 **Expected Output:**
 - If an attempt is made to delete a record from `sensitive_data`, an error message is raised, e.g., `ERROR: Deletion not allowed on this table.`
 # output:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e9958212-0d0b-47da-838b-33d88b9001de" />
+<img width="1908" height="865" alt="Screenshot 2025-11-17 183624" src="https://github.com/user-attachments/assets/586b1cf2-a9db-477d-a145-ab25176ba1ac" />
+
 
 ---
 
@@ -150,7 +152,8 @@ SELECT * FROM products;
 **Expected Output:**
 - The `last_modified` column in the `products` table is updated automatically to the current date and time when any record is updated.
 # output:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4bfa25ea-3f5e-4283-aa7e-5886b1dc8e98" />
+<img width="1915" height="1055" alt="Screenshot 2025-11-17 183650" src="https://github.com/user-attachments/assets/5e6aa544-7dd6-465c-bc09-ea1271511a81" />
+
 
 ---
 
@@ -203,7 +206,8 @@ SELECT * FROM audit_log;
 **Expected Output:**
 - The `audit_log` table will maintain a count of how many updates have been made to the `customer_orders` table.
 # output:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a760173c-a932-44f8-99f8-499f53612ccf" />
+<img width="1913" height="1043" alt="Screenshot 2025-11-17 185224" src="https://github.com/user-attachments/assets/1169c092-2b61-46f2-9b07-f91ee61da24b" />
+
 
 ---
 
@@ -241,8 +245,10 @@ INSERT INTO employees (emp_id, emp_name, salary) VALUES (2, 'Bob', 2000);
 **Expected Output:**
 - If the inserted salary in the `employees` table is below the condition (e.g., salary < 3000), the insert operation is blocked, and an error message is raised, such as: `ERROR: Salary below minimum threshold.`
 # output:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bc2472e3-ef68-41a7-be19-41389872c2ec" />
+<img width="1919" height="829" alt="Screenshot 2025-11-17 183909" src="https://github.com/user-attachments/assets/eef9d1b3-798f-413d-84d8-d7dabf1db3a8" />
+
 
 
 ## RESULT
 Thus, the PL/SQL trigger programs were written and executed successfully.
+
